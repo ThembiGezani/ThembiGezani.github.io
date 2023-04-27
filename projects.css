@@ -1,0 +1,111 @@
+body {
+  background-image: url("img/khabe-rasengan.jpg");
+}
+
+nav {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: whitesmoke;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ff6b6b;
+}
+
+/* Style the portfolio section */
+#portfolio {
+  padding: 50px;
+}
+
+/* Style the project cards */
+#portfolio ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#portfolio li {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  width: 300px;
+}
+
+#portfolio li img {
+  display: block;
+  height: 200px;
+  width: 100%;
+}
+
+#portfolio li h3,
+#portfolio li p {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+#portfolio li h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#portfolio li p {
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  color: wheat;
+}
+
+#contact-me a {
+  color: antiquewhite;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: red;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: green;
+}
+footer {
+  color: azure;
+}
