@@ -1,0 +1,24 @@
+header {
+  font-weight: bold;
+  text-align: left;
+  display: block;
+  font-size: x-large;
+}
+#navbar {
+  text-align: left;
+}
+@media (max-width: 1199px) and (min-width: 769px) {
+  #navbar {
+    width: 809px;
+  }
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #cc0000;
+  color: white;
+  font-family: "Exo 2", sans-serif;
+  padding: 1em;
+}

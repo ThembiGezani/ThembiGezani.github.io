@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My survey form</title>
+    <link rel="stylesheet" href="myform.css">
+</head>
+<body>
+    <h1 id="title"> Thembi's survey form</h1>
+    <p id="description"> Thank you for taking the time to help me make a decision </p>
+    <form id="survey-form" action="" method="post">
+        <fieldset>
+            <label id="name-label"     for="first-name">Enter Your First Name :<input id="name" required placeholder="John"  name="name" type="text"> </label>
+
+            <label id="last-name" for="last-name">Enter Your Last Name <input placeholder="Johnson" type="text"></label>
+
+            <label id="number-label" for="age">Enter Your Age (optional) <input placeholder="20" type="number" id="number" name="age" min="12" max="100"></label>
+
+            <label id="email-label" for="email" >Enter Your Email <input placeholder="somebody@somewhere.com" id="email" type="email" name="email" required> </label>
+
+        </fieldset>
+        <fieldset>
+            <p>would you recommend a course in I.T?</p>
+            <label for="absolutely"><input value="absolutely" type="radio" id="y-rec" name="group 1" class="inline">Absolutely!</label>
+            
+            <label for="maybe"> <input value="maybe" type="radio" id="m-rec" name="group 1" class="inline">Maybe</label>
+
+            <label for="no"><input value="no" type="radio" id="n-rec" name="group 1" class="inline">No!</label>
+
+            <label for="terms-and-conditions"><input value="0" type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required class="inline" > I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+        </fieldset>
+        <fieldset>
+            <p>What's the best thing one can get out of an I.T course?(check all that apply)</p>
+            <label for=""></label>
+        </fieldset>
+        <fieldset>
+            <label for="">Which are your favourite operating systems?(check all that apply)
+                Mac <input value="1" type="checkbox" class="inline">
+                Windows <input value="2" type="checkbox" class="inline">
+                Linux <input value="3" type="checkbox" class="inline">
+            </label>
+
+        </fieldset>
+        <fieldset>
+            <label id="drop" for="" >which option best describes your current role?
+            <select name="dropdown" id="dropdown">
+                <option disabled value="">Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Part time worker</option>
+                <option value="3">Full time worker</option>
+                <option value="4">That is ptivate information</option>
+                <option value="5">Other</option>
+            </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label id="suggestions" for="suggestions"> Any Comments Or Suggestions?
+                <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter yor comments here..."></textarea>
+            </label>
+        </fieldset>
+        <fieldset></fieldset>
+            <input placeholder="submit" id="submit" value="submit" type="submit">
+         </fieldset>
+    </form>
+</body>
+</html>
